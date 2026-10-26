@@ -1,9 +1,9 @@
-from os import system
-import itertools
+    from os import system
+    import itertools
 
-#Es un programa que reciba un valor de resistencia y obtenga el valor comercial más próximo usando 1, 2 o 3 resistencias en todas las combinaciones posibles serie paralelo en que se puedan conectar (con tolerancia de1% o 10%) 
+    #Es un programa que reciba un valor de resistencia y obtenga el valor comercial más próximo usando 1, 2 o 3 resistencias en todas las combinaciones posibles serie paralelo en que se puedan conectar (con tolerancia de1% o 10%) 
 
-class AnalizadorResistencias:
+    class AnalizadorResistencias:
     """Clase encargada de la lógica matemática y búsqueda de valores comerciales."""
     
     E12 = [1.0, 1.2, 1.5, 1.8, 2.2, 2.7, 3.3, 3.9, 4.7, 5.6, 6.8, 8.2]
@@ -96,11 +96,11 @@ class AnalizadorResistencias:
         return mejor_resultado
 
 
-class MenuInteractivo:
+    class MenuInteractivo:
     """Clase encargada de la interfaz de usuario y la navegación por consola."""
     
-    @staticmethod
-    def mostrar_portada():
+      @staticmethod
+      def mostrar_portada():
         system("cls")
         system("color 0A")
         print("--------------------------------------")
@@ -187,6 +187,6 @@ class MenuInteractivo:
                 input("\n[!] Opción no válida. Presione Enter para intentar de nuevo...")
 
 
-if __name__ == "__main__":
+      if __name__ == "__main__":
     app = MenuInteractivo()
     app.ejecutar()
